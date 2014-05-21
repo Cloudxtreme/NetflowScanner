@@ -20,7 +20,7 @@ public class Enter extends JFrame {
         Container contentPane = getContentPane();
         contentPane.add(buttonList,BorderLayout.NORTH);
         contentPane.add(tabs,BorderLayout.CENTER);
-        setSize(600, 450);
+        setSize(700, 450);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
