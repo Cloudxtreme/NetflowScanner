@@ -7,8 +7,8 @@ import javax.swing.*;
  * Time: 下午5:38
  * To change this template use File | Settings | File Templates.
  */
-public class GraphPane extends JPanel{
-    public GraphPane(){
+public class GraphPane extends JPanel {
+    public GraphPane() {
 
     }
 }

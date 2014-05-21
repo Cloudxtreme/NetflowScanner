@@ -9,14 +9,18 @@ import java.awt.*;
  * To change this template use File | Settings | File Templates.
  */
 public class Enter extends JFrame {
+    private ButtonList buttonList;
     private TabPane tabs;
-    public Enter(String title) throws HeadlessException {
+
+    public Enter(String title) {
         super(title);
+        this.setLayout(new BorderLayout());
+        buttonList = new ButtonList();
         tabs = new TabPane();
         Container contentPane = getContentPane();
-        contentPane.add(tabs);
-
-        setSize(800,600);
+        contentPane.add(buttonList,BorderLayout.NORTH);
+        contentPane.add(tabs,BorderLayout.CENTER);
+        setSize(600, 450);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
